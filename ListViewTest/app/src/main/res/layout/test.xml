@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="30px"
+        android:id="@+id/image1"
+        android:src="@drawable/libai"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李白"
+        android:textSize="40px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@+id/image1"
+        android:layout_marginLeft="20px"
+        android:layout_toEndOf="@+id/image1"
+        android:id="@+id/tvname2"/>
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:src="@drawable/i1"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignTop="@+id/tvname2"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view" />
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#a6a8aa"
+        android:layout_below="@+id/tvname2"
+        android:layout_alignLeft="@+id/tvname2"
+        android:layout_alignStart="@+id/tvname2"
+        android:layout_marginTop="15px"
+        android:id="@+id/view" />
+</RelativeLayout>
