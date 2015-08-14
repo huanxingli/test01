@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="门店代表"
+        android:textSize="30dp"
+        android:layout_marginTop="40px"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/bn1"
+        android:layout_alignStart="@+id/bn1"
+        android:layout_marginTop="40px"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView">
+
+        <ImageView
+            android:id="@+id/ivUserName"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/username"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="10px"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:hint="请输入用户名"
+            android:background="@drawable/bg_border1"
+            android:selectAllOnFocus="true"
+            android:ems="13"
+            android:layout_toRightOf="@+id/ivUserName"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            >
+            <requestFocus />
+        </EditText>
+        <View
+            android:id="@+id/view1"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#a6a8aa"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_alignRight="@+id/editText1"
+            android:layout_alignEnd="@+id/editText1" />
+        <ImageView
+            android:id="@+id/ivUserPass"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/userpassword"
+            android:layout_below="@+id/ivUserName"
+            android:layout_marginTop="25px"
+            android:layout_marginLeft="10px"/>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:ems="13"
+            android:background="@drawable/bg_border1"
+            android:inputType="textPassword"
+            android:layout_below="@+id/view1"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_marginTop="5px"
+            android:layout_centerHorizontal="true">
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="55px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="25px"
+        android:text="登    录"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_border2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="激活"
+        android:linksClickable="true"
+        android:textColor="#00f"
+        android:layout_below="@id/bn1"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="14px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:linksClickable="true"
+        android:textColor="#00f"
+        android:layout_below="@id/bn1"
+        android:layout_alignRight="@id/bn1"
+        android:layout_marginRight="18px"
+        android:layout_marginTop="14px"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.dponline.com.cn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28px"/>
+</RelativeLayout>
